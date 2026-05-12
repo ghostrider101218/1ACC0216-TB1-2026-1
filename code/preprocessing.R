@@ -124,3 +124,6 @@ boxplot(data$adr, main = "Detección de Outliers en Tarifa Diaria (ADR)", ylab =
 boxplot(data$lead_time, main = "Detección de Outliers LEAD TIME", ylab = "lead_time", 
         col = "lightgreen", 
         outcol = "red")  # Gráfico de caja para identificar OUTLIERS.
+
+#Guardar el dataset preprocesado
+write.csv(data, "hotel_bookings_v2.csv", row.names = FALSE, quote = FALSE)
